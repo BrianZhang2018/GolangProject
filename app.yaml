@@ -1,0 +1,19 @@
+app: &common
+  dbConfig:
+    dbName: "twilio"
+    host: "localhost"
+    port: "3306"
+    userName: "root"
+    pwd: "1234"
+
+local:
+  <<: *common
+
+dev:
+  <<: *common
+
+qa:
+  <<: *common
+
+prod:
+  <<: *common
